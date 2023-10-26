@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu 1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-image: url('MAIN.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 180vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
+        .logo {
+            max-width: 300px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            height: 80vh;
+            background-image: url('가려지지않는이미지.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1000px;
+            text-align: left;
+            margin: 200px auto 50px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 35px 20px 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .text {
+            font-size: 20px;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        .magic-text {
+            font-size: 40px;
+            color: white;
+            font-weight: normal;
+            white-space: nowrap;
+            margin: 0;
+            text-shadow: 0 0 5px rgba(255, 255, 255, 1);
+            margin-bottom: 30px;
+        }
+
+        .centered-image {
+            max-width: 900px;
+            margin-bottom: 50px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .centered-image:hover {
+            opacity: 1;
+        }
+
+        .menu-list {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            padding: 5px;
+            background-color: transparent;
+        }
+
+        .menu-list li {
+            margin-left: 20px;
+            margin-top: -5px;
+        }
+
+        .menu-list a {
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .logo,
+        .menu-list {
+            background-color: transparent;
+        }
+
+        .carnival-text {
+    font-size: 40px;
+    text-align: right;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 970px; /* 변경된 스타일 */
+    bottom: 330px;
+}
+
+.carnival-description {
+    font-size: 17px;
+    color: white;
+    font-family: 나눔고딕, Bold;
+    text-align: right; /* 변경된 스타일 */
+    max-width: 600px; 
+    margin-top: 10px; 
+    position: absolute;
+    right: 80px; /* 변경된 스타일 */
+    bottom: 200px;
+}
+.moon-text {
+    font-size: 40px;
+    text-align: right;
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin-bottom: 20px;
+    position: absolute;
+    left: 1120px; /* 변경된 스타일 */
+    bottom: -320px;
+}
+
+.moon-description {
+    font-size: 17px;
+    color: white;
+    font-family: 나눔고딕, Bold;
+    text-align: right; /* 변경된 스타일 */
+    max-width: 600px; 
+    margin-top: 10px; 
+    position: absolute;
+    right: 100px; /* 변경된 스타일 */
+    bottom: -430px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <ul class="menu-list">
+            <li><a href="page1.html">Parade</a></li>
+            <li><a href="page2.html">Map</a></li>
+            <li><a href="page3.html">Blood City</a></li>
+            <li><a href="page4.html">Season</a></li>
+            <li><a href="page5.html">Social Media</a></li>
+        </ul>
+        <img class="logo" src="LOGO.png" alt="Logo" onclick="window.location.href='INDEX.html';">
+    </header>
+    <main>
+        <div class="text">
+            <h1 class="magic-text"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                Fantasyland<br> EVERLAND</h1>
+        </div>
+        <div class="carnival-text">
+                Carnival Fantasy Parade
+            </div>
+        <img class="centered-image" src="cp.jpeg" alt="Centered Image"><br><br><br><br><br><br>
+        <div class="carnival-description">
+            브라질의 삼바, 베니스의 가면, 카리브 축제가 한 자리에 모였다!<br><br>
+               세계 유명 축제를 한 번에 즐길 수 있는 기회를 놓치지 마세요!
+        </div>
+
+        <div class="moon-text">
+            Moonlight Parade
+        </div>
+    <img class="centered-image" src="mp.jpeg" alt="Centered Image">
+    <div class="moon-description">
+        밤을 화려하게 장식해줄 빛의 축제!<br><br>
+        반짝이는 빛과 신나는 음악이 만드는 환상의 퍼레이드!
+    </div>
+    </main>
+    <footer>
+        <div class="text" style="margin-top: 25px;">Copyright ⓒ 2023 KYLE KANG , All Right Reserved</div>
+    </footer>
+</body>
+
+</html>
