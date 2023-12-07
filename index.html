@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DRAMA</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  /* 메뉴 이미지를 오른쪽으로 정렬하는 속성 추가 */
+            padding: 0 20px;
+        }
+
+        header img {
+            width: 200px;  /* 로고와 메뉴 이미지 크기를 200픽셀로 변경 */
+            cursor: pointer;
+        }
+
+        header img.menu {
+            width: 200px;  /* 메뉴 이미지 크기를 200픽셀로 변경 */
+            margin-left: auto;  /* 메뉴 이미지를 오른쪽으로 정렬하는 속성 추가 */
+        }
+
+        main {
+            margin-top: 120px;
+        }
+
+        main img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" onclick="location.href='index.html'" alt="Logo">
+        <img src="m1.png" class="menu" onclick="location.href='1.html'" alt="Menu 1">
+        <img src="m2.png" class="menu" onclick="location.href='2.html'" alt="Menu 2">
+        <img src="m3.png" class="menu" onclick="location.href='3.html'" alt="Menu 3">
+        <img src="m4.png" class="menu" onclick="location.href='4.html'" alt="Menu 4">
+        <img src="m5.png" class="menu" onclick="location.href='5.html'" alt="Menu 5">
+    </header>
+
+    <main>
+        <img src="0.PNG" alt="Main Image">
+    </main>
+</body>
+</html>
